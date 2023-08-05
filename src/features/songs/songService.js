@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'ai.fitfinder.ca/api/songs/';
+const API_URL = '/api/songs/';
 
 // Crate new song
 const createSong = async (song, token) => {
@@ -70,7 +70,6 @@ const getPublicSongs = async (query) => {
         for(let i = 0; i < query.package.length; i++){
             packageString += query.package[i] + ',';
         }
-        console.log(API_URL + 'getPublicSongs/' + query.query + '/' + packageString)
         response = await axios.get(API_URL + 'getPublicSongs/' + query.query + '/' + packageString);
     }
     else if(query){

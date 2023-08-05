@@ -18,6 +18,8 @@ export const PublicSongs = () => {
             toast.error(message);
         }
         dispatch(getPublicSongs());
+        console.log("songs: ", songs)
+        console.log("Test")
         return () => {
             dispatch(reset());
         }
