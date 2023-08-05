@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/songs/';
+const API_URL = 'ai.fitfinder.ca/api/songs/';
 
 // Crate new song
 const createSong = async (song, token) => {
